@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 40px;
+}
+
+.logo {
+    color: #59778D;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 35px;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar ul li {
+
+
+    font-size: 20px;
+    color: #59778D;
+}
+
+.user-button {
+
+    background-color: #E7F7FF;
+    color: #5FC5FF;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 25px 23px;
+}
+
+.container {
+    width: 90vw;
+    height: fit-content;
+    margin-top: 20px;
+
+
+
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.hero-sec {
+
+
+
+    width: 40vw;
+    /* padding: 150px; */
+
+
+}
+
+.light-blue {
+    color: #05A7FF;
+}
+
+h1 {
+    line-height: 1.7;
+    color: #5f6c76;
+
+
+}
+
+.img-sec {
+
+
+
+    display: inline-block;
+}
+
+img {
+    width: 40vw;
+    animation-name: orbit;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes orbit {
+
+    0% {
+        transform: translate(0, 0);
+
+    }
+
+    25% {
+
+        transform: translate(-40px, 0);
+
+
+    }
+
+    50% {
+        transform: translate(0, -80px);
+
+    }
+
+    75% {
+        transform: translate(40px, 40px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        transform: scaleY(1.1)
+    }
+}
+
+.hero-para {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: #b2b1b1;
+    font-size: 19px;
+
+}
+
+.book-button {
+    background-color: #05A7FF;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: rotate(-10deg) scale(1.1);
+    transition: all 1s ease-out;
+
+}
+
+@media (width > 1200px) {
+    .hero-sec {
+        padding: 150px;
+    }
+
+}
+
+@media (width < 820px) {
+    ul {
+        display: none;
+    }
+}
+
+@media (width<=600px) {
+    .hero-sec {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    img {
+        width: 80vw;
+    }
+}
